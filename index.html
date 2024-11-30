@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alexander Vargas Ceballos">
+    <title>¡Feliz Navidad!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #ff3d3d, #ffc048);
+            color: white;
+        }
+        .card {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease-in-out;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .btn {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #ff3d3d;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #ff3d3d;
+            color: white;
+            transform: scale(1.1);
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🎄 ¡Feliz Navidad! 🎅</h1>
+        <p>Espero que esta Navidad esté llena de alegría, amor y buenos momentos. ¡Mis mejores deseos para ti y tu familia!</p>
+        <a href="#" class="btn">✨ ¡Descubre tu regalo! ✨</a>
+    </div>
+    <script>
+        document.querySelector('.btn').addEventListener('click', function() {
+            alert("¡Tu regalo es un deseo de éxito y felicidad para ti en este nuevo año! 🎁");
+        });
+    </script>
+</body>
+</html>
